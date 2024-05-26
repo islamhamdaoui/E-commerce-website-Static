@@ -35,7 +35,8 @@ To view the website locally, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/islamhamdaoui/E-commerce-website-Static-.git ```
+   git clone https://github.com/islamhamdaoui/E-commerce-website-Static-.git
+   ```
    
 2. Open the index.html file in your preferred web browser.
 
