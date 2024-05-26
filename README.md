@@ -1,3 +1,9 @@
+<div align="center">
+    <a href="https://islamhamdaoui.github.io/E-commerce-website-Static/" target="_blank">
+        <img src="https://img.shields.io/badge/Demo-Link-brightgreen" alt="Demo Link">
+    </a>
+</div>
+
 # Polana Static E-commerce Website
 
 ## Overview
