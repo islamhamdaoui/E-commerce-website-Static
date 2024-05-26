@@ -1,0 +1,440 @@
+.promotion {
+  height: 30px;
+  width: 100%;
+  background-color: rosybrown;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+
+}
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mainimg {
+  width: 100%;
+}
+
+.mainimg2 {
+  margin-top: 15px;
+  background-image: url(all/photos/sky.jpg);
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-around;
+  flex-flow: wrap;
+  align-items: center;
+ 
+
+}
+
+.mainimg2 img {
+  border-radius: 5px;
+  height: 550px;
+  background-size: cover;  
+  transition: 1s ease-in-out;
+  cursor: pointer;
+
+}
+
+.mainimg2 img:hover {
+ filter: grayscale(10);
+ transition: 0.5s ease-in-out;
+}
+
+
+body {
+    margin: 0px;
+   background-color: #f3f3f3;
+   min-height: 100vh;
+ 
+  }
+  
+  .header {
+ 
+    height: 53px;
+    margin-top: 25px;
+    z-index: 100;
+    display: flex;
+    /* position: fixed; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    
+  }
+  
+ 
+  .image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .shop {
+    height: 2.92vw;
+    width: 9%;
+    position: absolute;
+    top: 39vw;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rosybrown;
+    border-radius: 12px;
+    font-family: 'Futura', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9vw;
+    transition:  0.3s ease-in-out;
+    cursor: pointer;
+   
+   
+  }
+  .shop:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    opacity: 75%;
+    
+    
+   
+  }
+  .text {
+    top: 30vw;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    z-index: 1;
+    font-size: 2.1vw;
+  }
+  
+
+  /* email design */
+.email-container {
+  background-color: #f5f5f7;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+ 
+			max-width: 100%;
+}
+
+.email-container__inner {
+ 
+  width: 100%;
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.subscription-text {
+  font-size: 30px;
+  text-align: center;
+  
+  font-weight: bold;
+  
+  margin-bottom: 20px;
+}
+
+
+.email-input {
+
+  width: 318px;
+  height: 53px;
+  border-radius: 7px;
+  border: 1px solid rgb(173, 173, 173);
+  padding-left: 13px;
+  font-size: 16px;
+  
+ 
+}  
+
+.email-input:focus::placeholder {
+  opacity: 0;
+}
+
+.email-input:focus {
+  outline: 1px solid rgb(173, 173, 173);
+}
+
+.subscribe-button {
+  width: 331px;
+  height: 55px;
+  border-radius: 7px;
+  border: none;
+  background-color: rosybrown;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  display: block;
+  transition: 0.4s ease-out;
+}
+.subscribe-button:hover {
+  opacity: 80%;
+}
+
+
+  /* .footer {
+    border-top: 1px solid rgb(49, 49, 49);
+    height: 53px;
+   border-width: 0.2px;
+  
+  } */
+
+
+ 
+   .divsearch {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-right: 20px;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 100px;
+    padding-left: 10px;
+   }
+
+   .se {
+    font-family: 'Futura', Arial, sans-serif;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    color: black;
+
+   }
+   .se::placeholder{
+    color: black;
+   }
+
+   .se:focus {
+    outline: none;
+   }
+
+   .icons {
+   
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+   height: 53px;
+   right: 35px;
+    
+  }
+    .icons a {
+    text-decoration: none;
+    }     
+  .img {
+    height: 25px;
+    cursor: pointer;
+   
+  }
+  .img2{
+    height: 28px;
+    cursor: pointer;
+    
+  }
+   .img1 {
+    height: 20px;
+   
+  }
+  .cart{
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .user{
+   cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .remove {
+    color: rgb(70, 68, 68);
+    margin-top: 10px;
+    font-size: 15px;
+    align-self: center;
+   text-decoration: underline;
+  }
+
+
+   
+
+
+
+ /*phone design*
+ @media screen and (max-width: 850px) {
+    body {
+        margin-top: 4%;
+    }
+    .mainimg {
+
+        height: 720px;;
+         
+         background-image: url(photos/phonemain.jpg);
+        
+       }
+
+       .text {
+        top: 430px;
+        left: 50%;
+        transform: translateX(-50%);
+       position: absolute;
+       font-family: Arial, Helvetica, sans-serif;
+       text-align: center;
+      }
+      
+      .mainimg {
+ 
+    background-size: cover;
+      }
+      
+ }
+ */
+
+/* for small screen design */
+@media screen and ( max-width:1480px ){
+  .mainimg2 img:nth-child(3) {
+   display: none;
+   transition: 1s ease-in-out
+
+  }
+  .mainimg2 img{
+    transition: 1s ease-in-out;
+   
+  }
+}
+
+@media screen and ( max-width:1115px ){
+  .mainimg2 img:nth-child(2) {
+   display: none;
+   transition: 1s ease-in-out
+
+  }
+  .mainimg2 img{
+    
+    height: 640px;
+    transition: 1s ease-in-out;
+   
+  }
+  .mainimg {
+    display: flex;
+    align-items: center;
+
+  }
+  .shop { 
+    margin-top: 50px;
+  }
+}
+
+@media screen and ( max-width:860px ){
+  .mainimg2 img:last-child {
+   display: none;
+   transition: 1s ease-in-out
+
+  }
+  .mainimg2 img{
+    
+    height: 640px;
+    transition: 1s ease-in-out;
+   
+  }
+  .shop {
+    width: 90px;
+    height: 25px;
+    top: 27%;
+    font-size: 9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+  }
+
+
+}
+
+@media screen and ( max-width:415px ){
+  .mainimg2 img:last-child {
+   display: none;
+ 
+   transition: 1s ease-in-out
+
+  }
+  .mainimg2 img{
+    
+    height: 530px;
+    transition: 1s ease-in-out;
+   
+  }
+
+  .text {
+    top: 50%;
+    transition: 1s ease-in-out;
+    font-size: 18px;
+
+  }
+
+  .shop {
+    width: 100px;
+    height: 35px;
+    top: 60%;
+    font-size: 11px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+  }
+
+
+  .mainimg .image {
+    content: url("all/photos/mainphone.jpg");
+   height: fit-content;
+   width: fit-content;
+    
+  }
+
+
+
+  .divsearch {
+    display: flex;
+    align-items: center;
+    width:30px;
+    margin-right: 10px;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 100px;
+    padding-left: 10px;
+    transition: 1s ease-in-out;
+   }
+   .icons {
+    margin-top: 75px;
+   align-items: center;
+   justify-content: right;
+   width: 100%;
+    transition: 1s ease-in-out;
+    position: static;
+   }
+
+   .se {
+      display: none;
+
+   }
+   .cart{
+   
+    margin-right: 10px;
+  
+  }
+
+
+
+}

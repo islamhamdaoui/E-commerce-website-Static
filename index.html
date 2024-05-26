@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="splash.css">
+    <title>Polana</title>
+    <link rel="stylesheet" href="all/footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="all/models/favicon.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Futura&display=swap');
+    
+        body {
+          font-family: 'Futura', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>  
+    <div class="promotion">BUY NOW AND GET 50% PROMOTION</div>
+    <!--this is for the header -->
+    <div class="header">
+        <div class="icons">
+            <div class="divsearch" onclick="search()"> 
+                <img src="all/photos/search.png" class="img1" alt="">
+                <input type="text" class="se" placeholder="SEARCH">
+            </div>
+            <a class="cart" href="all/cart/cart.html">
+                <img src="all/photos/shopping-bag.png" class="img2" alt="">
+                <p class="se">Cart</p>
+            </a>
+          
+        </div>
+    </div>
+
+    <!--for the main photo-->
+    <div class="mainimg">
+        <img src="all/photos/main.jpg" class="image" alt="" draggable="false">
+        <h2 class="text">Are you looking for the perfect one?<br> – You will find it here.</h2>
+        <button onclick="visit()" class="shop">SHOP NOW</button>
+    </div>
+
+    <div class="mainimg2">
+        
+         <img src="all/photos/mainmodel1.jpg" class="img1" alt="">
+         <img src="all/photos/mainmodel2.jpg" alt="">
+         <img src="all/photos/mainmodel3.jpg" alt="">
+         <img src="all/photos/mainmodel4.jpg" alt="">
+            <!--
+
+                    <img src="photos/main2.jpg" alt="">
+            <img src="photos/main3.png" alt=""></div>
+       
+            -->
+         
+     </div>
+
+    <!--for the email-->
+    <br>
+    <div class="email-container">
+        <div class="email-container__inner">
+            <p class="subscription-text">SUBSCRIBE TO GET OUR NEW PRODUCTS AND PROMOTIONS!</p>
+            
+            <input id="email-input" class="email-input" type="email" placeholder="Email address">
+            <button class="subscribe-button">SUBSCRIBE</button>
+        </div>
+    </div>
+
+
+    <!--thats for the footer (dak eshi li jay Lta7t)-->
+    <footer class="footer">
+        <div class="content">
+            <div class="footerdivcont">
+                <div class="footercont">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="all/about/index.html">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>get help </h4>
+                    <ul>
+                        <li><a href="all/email/email.html">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Sweats</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>follow us</h4>
+                    <div class="socialmedia">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <h4>Newsletter Subscription</h4>
+                    <form action="">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="useremail" id="email" placeholder="Entre your email">
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="copyrith">
+                        <p class="copy">&copy; Polana. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </footer>
+
+    <SCript>
+        sayhi();
+
+        function search() {
+    window.location.href ="all/search/search.html"
+ }
+
+        function visit () {
+            window.location.href = "all/home/home.html"
+        }
+    </SCript>
+</body>
+</html>

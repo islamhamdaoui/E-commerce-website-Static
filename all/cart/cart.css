@@ -1,0 +1,151 @@
+.promotion {
+  height: 30px;
+  width: 100%;
+  background-color: rosybrown;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+ 
+}
+
+
+
+body {
+    margin: 0;
+    background-color: #F0F0F2;
+}
+.header {
+ top: 55px;
+    height: 53px;
+ 
+    z-index: 100;
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    
+  }
+.logodiv {
+   padding-left: 10%;
+}
+
+  /*logo line */
+  .line{
+    
+    width: 15%;
+    height: 8px;
+    background-color: black;
+  
+   }
+   
+.logo{
+
+    font-size:7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+   
+}
+
+
+.icons {
+   
+    display: flex;
+    align-items: center;
+   height: 53px;
+   right: 35px;
+   margin-top: 20px;
+    position: absolute;
+  }
+ 
+  .img {
+    height: 25px;
+    cursor: pointer;
+   
+  }
+  .img2{
+    height: 23px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+    
+  }
+   .img1 {
+    height: 20px;
+   
+  }
+  .cart{
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .user{
+   cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .searchdiv {
+    height: 42px;
+    width: 43px;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.search {
+    height: 20px;
+   
+}
+
+  
+
+   .se:focus {
+    outline: none;
+   }
+  
+
+ .under {
+    margin-top: 30px;
+  
+  
+    padding-left:10% ;
+ }
+  .p1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .cartline {
+    width: 12px;
+    height: 3px;
+    margin-left: 11px;
+    background-color: black;
+  
+  }
+
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+  }
+  
+  .empty {
+    height: 60px;
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  .start {
+    color: rosybrown;
+  }

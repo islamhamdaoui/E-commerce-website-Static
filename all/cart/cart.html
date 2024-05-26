@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - POLANA</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Futura&display=swap');
+      
+      body {
+        font-family: 'Futura', Arial, sans-serif;
+      }
+      </style>
+
+<link rel="stylesheet" href="cart.css">
+<link rel="stylesheet" href="../footer/footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="icon" href="../models/favicon.png" type="image/png">
+</head>
+<body>
+
+  <div class="promotion">BUY NOW AND GET 50% PROMOTION</div>
+
+    <!--this is for the header -->
+    <div class="header">
+
+        <div class="icons">
+          <div class="searchdiv" onclick="search()"><img class="search" src="../photos/searchwhite.png" alt=""></div>
+           <div class="cart">  <img src="../photos/x.png" onclick="back()" class="img2" alt="">
+            <p class="se"></p></div>
+          <div class="user">
+            <img src="../photos/user.png" class="img" alt="">
+            
+            
+          </div>
+
+        </div>
+    </div>
+    <!--for logo-->
+   
+    <div class="logodiv" onclick="home()"><span class="logo">Polana</span> 
+        <div class="line"></div> 
+    </div>
+  
+
+    <!--under logo-->
+    <div class="under"><div class="cartdiv">
+
+        <span class="p1">CART</span>
+        <div class="cartline"></div>
+    </div></div>
+
+    <div class="middle">
+        <img src="../photos/empty-cart.png" class="empty" alt="">
+        <br>
+        <div class="text-container">
+          <span>Your cart is empty!</span>
+          <span>Sounds like a good time to <a class="start" href="../home/home.html">start shopping.</a></span>
+        </div>
+      </div>
+
+
+
+       <!--thats for the footer (dak eshi li jay Lta7t)-->
+    <footer class="footer">
+      <div class="content">
+          <div class="footerdivcont">
+              <div class="footercont">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                      <li><a href="#">affiliate program</a></li>
+                  </ul>
+              </div>
+              <div class="footercont">
+                  <h4>get help </h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">shipping</a></li>
+                      <li><a href="#">returns</a></li>
+                      <li><a href="#">order status</a></li>
+                      <li><a href="#">payment options</a></li>
+                  </ul>
+              </div>
+              <div class="footercont">
+                  <h4>online shop</h4>
+                  <ul>
+                      <li><a href="#">Shoes</a></li>
+                      <li><a href="#">T-shirts</a></li>
+                      <li><a href="#">Jackets</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">Sweats</a></li>
+                  </ul>
+              </div>
+              <div class="footercont">
+                  <h4>follow us</h4>
+                  <div class="socialmedia">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  <h4>Newsletter Subscription</h4>
+                  <form action="">
+                      <i class="fa-solid fa-envelope"></i>
+                      <input type="email" name="useremail" id="email" placeholder="Entre your email">
+                      <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                  </form>
+                  <div class="copyrith">
+                    <p class="copy">&copy; Polana. All rights reserved.</p>
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+   </footer>
+
+
+      
+
+      <script>
+        function back() {
+  window.history.back();
+}
+function search() {
+  window.location.href = "../search/search.html"
+}
+
+  function home() {
+window.location.href="../../index.html"
+  }
+      </script>
+</body>
+</html>

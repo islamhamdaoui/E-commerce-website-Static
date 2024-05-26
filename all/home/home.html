@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLANA - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../models/favicon.png" type="image/png">
+   
+    
+</head>
+<body>
+  
+
+    <div class="promotion">BUY NOW AND GET 50% PROMOTION</div>
+    <div class="header">
+        <h1 id="h1" onclick="visit()">POLANA</h1>
+        
+
+        <!--div icons-->
+        <div class="icons">
+            <div class="searchdiv" onclick="search()"><img class="search" src="../photos/searchwhite.png" alt=""></div>
+            <img src="../photos/shopping-bag.png" class="cart" onclick="cart()" alt="">
+            
+            <div class="contact" onclick="contact()"> Contact <div></div></div>
+       
+        </div>
+
+    
+
+    </div>
+    <!--for choices and categories-->
+    <div class="choices">
+        <div class="all">All</div>
+        <div class="others">Shoes</div>
+        <div class="others" id="scroll-button">T-Shirts</div>
+        <div class="others">Jackets</div>
+        <div class="others">Jeans</div>
+        <div class="others">Sweats</div>
+        
+    </div>
+
+    <!--hadu el items-->
+
+    <div class="items-container">
+        <!--ITEM 1-->
+        <div class="item" onclick="item1()">
+            <img src="../models/model1-1.jpg" alt="" class="item-img">
+            <p>Shunky trainers</p>
+            <p class="price"><B>2,900DZD</B></p>
+            <!--hadi ta3 ki tdir hover lel img-->
+            <div class="after-hover">
+                <div>BUY</div>
+                <div  onclick="added(event)" class="add">ADD</div>
+            </div>
+         
+            
+        </div>
+
+
+        <!--ITEM 2-->
+        <div class="item" >
+            <img src="../models/model2-1.jpg" alt="" class="item-img" onclick="item2()">
+            <p>Shunky trainers</p>
+            <p class="price"><B>8,500DZD</B></p>
+
+              <!--hadi ta3 ki tdir hover lel img-->
+              <div class="after-hover">
+                <div onclick="item2()">BUY</div>
+                <div  onclick="added(event)" class="add">ADD</div>
+            </div>
+        </div>
+
+        <!--ITEM 3-->
+        <div class="item">
+            <img src="../models/model3-1.jpg" alt="" class="item-img" onclick="item3()">
+            <p>Shunky trainers</p>
+            <p class="price"><B>8,500DZD</B></p>
+
+              <!--hadi ta3 ki tdir hover lel img-->
+              <div class="after-hover">
+                <div onclick="item3()">BUY</div>
+                <div  onclick="added(event)" class="add">ADD</div>
+            </div>
+        </div>
+
+        <!--ITEM 4-->
+        <div class="item">
+            <img src="../items/model3.jpg" alt="" class="item-img">
+            <p>Shunky trainers</p>
+            <p class="price"><B>8,500DZD</B></p>
+
+              <!--hadi ta3 ki tdir hover lel img-->
+              <div class="after-hover">
+                <div>BUY</div>
+                <div  onclick="added(event)" class="add">ADD</div>
+            </div>
+        </div>
+
+   
+
+        <!--ITEM 2-->
+        <div class="item">
+            <img src="../items/model5.jpg" alt="" class="item-img">
+            <p>Shunky trainers</p>
+            <p class="price"><B>8,500DZD</B></p>
+
+              <!--hadi ta3 ki tdir hover lel img-->
+              <div class="after-hover">
+                <div>BUY</div>
+                <div  onclick="added(event)" class="add">ADD</div>
+            </div>
+        </div>
+
+        <!--ITEM 2-->
+        <div class="item">
+            <img src="../items/model5.2.jpg" alt="" class="item-img">
+            <p>Shunky trainers</p>
+            <p class="price"><B>3600DZD</B></p>
+
+             <!--hadi ta3 ki tdir hover lel img-->
+             <div class="after-hover">
+                <div>BUY</div>
+                <div  onclick="added(event)" class="add">ADD</div>
+            </div>
+        </div>
+
+        </div>
+
+         
+     
+    </div>
+
+        <!--hada for shirts kho-->
+
+    <div class="shirts-container" id="target-div">
+            <div class="shirt-text">
+                <SPAN class="text1">SIMPLE SHIRTS YOU MAY LIKE</SPAN>
+                <SPAn class="text2">Basic tshirts 100% made with cotton only for 1200DZD</SPAn>
+                <SPAN class="text1">1200DZD</SPAN>
+            </div>
+
+            <div class="shirts-img">
+                <img src="../items/blueshirt.jpg" class="shirt1" alt="">
+                <img src="../items/whiteshirt.jpg" class="shirt2" alt="">
+                <img src="../items/darkshirt.jpg" class="shirt1" alt="">
+
+                
+            </div>
+            <div class="line-container">
+                <div class="line"></div>
+            </div>
+
+            <!--1 photo in middle-->
+
+            <div class="middle-container">
+                <div class="middle-img">
+                    <img src="../items/middlemodel.jpg" alt="">
+                    <span class="middle-text">ORIGINAL 100% POLANA COTON</span>
+                </div>
+            </div>
+            
+          
+ <!--hadu el items-->
+
+ <div class="items-container">
+    <!--ITEM 1-->
+    <div class="item">
+        <img src="../items/model2.jpg" alt="" class="item-img">
+        <p>Shunky trainers</p>
+        <p class="price"><B>8,500DZD</B></p>
+
+        
+    </div>
+
+    <!--ITEM 2-->
+    <div class="item">
+        <img src="../items/pant.jpg" alt="" class="item-img">
+        <p>Shunky trainers</p>
+        <p class="price"><B>8,500DZD</B></p>
+    </div>
+
+    <!--ITEM 3-->
+    <div class="item">
+        <img src="../items/model1.jpg" alt="" class="item-img">
+        <p>Shunky trainers</p>
+        <p class="price"><B>8,500DZD</B></p>
+    </div>
+
+    <!--ITEM 4-->
+    <div class="item">
+        <img src="../items/model3.jpg" alt="" class="item-img">
+        <p>Shunky trainers</p>
+        <p class="price"><B>8,500DZD</B></p>
+    </div>
+
+
+
+    <!--ITEM 2-->
+    <div class="item">
+        <img src="../items/model5.jpg" alt="" class="item-img">
+        <p>Shunky trainers</p>
+        <p class="price"><B>8,500DZD</B></p>
+    </div>
+
+    <!--ITEM 2-->
+    <div class="item">
+        <img src="../items/model5.2.jpg" alt="" class="item-img">
+        <p>Shunky trainers</p>
+        <p class="price"><B>8,500DZD</B></p>
+    </div>
+
+  <!--ITEM 1-->
+  <div class="item">
+    <img src="../items/model2.jpg" alt="" class="item-img">
+    <p>Shunky trainers</p>
+    <p class="price"><B>8,500DZD</B></p>
+</div>
+
+<!--ITEM 2-->
+<div class="item">
+    <img src="../items/pant.jpg" alt="" class="item-img">
+    <p>Shunky trainers</p>
+    <p class="price"><B>8,500DZD</B></p>
+</div>
+
+<!--ITEM 3-->
+<div class="item">
+    <img src="../items/model1.jpg" alt="" class="item-img">
+    <p>Shunky trainers</p>
+    <p class="price"><B>8,500DZD</B></p>
+</div>
+
+<!--ITEM 4-->
+<div class="item">
+    <img src="../items/model3.jpg" alt="" class="item-img">
+    <p>Shunky trainers</p>
+    <p class="price"><B>8,500DZD</B></p>
+</div>
+
+
+
+<!--ITEM 2-->
+<div class="item">
+    <img src="../items/model5.jpg" alt="" class="item-img">
+    <p>Shunky trainers</p>
+    <p class="price"><B>8,500DZD</B></p>
+</div>
+
+<!--ITEM 2-->
+<div class="item">
+    <img src="../items/model5.2.jpg" alt="" class="item-img">
+    <p>Shunky trainers</p>
+    <p class="price"><B>8,500DZD</B></p>
+</div>
+
+
+</div>
+
+
+
+
+    </div>
+
+
+
+    
+    <!--thats for the footer (dak eshi li jay Lta7t)-->
+    <footer class="footer">
+        <div class="content">
+            <div class="footerdivcont">
+                <div class="footercont">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>get help </h4>
+                    <ul>
+                        <li><a href="../email/email.html">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Sweats</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>follow us</h4>
+                    <div class="socialmedia">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <h4>Newsletter Subscription</h4>
+                    <form action="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="useremail" id="email" placeholder="Entre your email">
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="copyrith">
+                        <p class="copy">&copy; Polana. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+     </footer>
+
+
+
+
+    <script>
+        function visit() {
+            window.location.href="../../index.html"
+        }
+        const zoomableImages = document.querySelectorAll('.item-img');
+
+zoomableImages.forEach(image => {
+  image.addEventListener('mouseenter', () => {
+    image.classList.add('zoomed');
+  });
+  
+  image.addEventListener('mouseleave', () => {
+    image.classList.remove('zoomed');
+  });
+});
+
+
+//hadi ki tacklicki 3la add when img hover tbadal e text
+ 
+function added(event) {
+  event.stopPropagation(); // hadi li trad bih e div ydir his own fucntion bla maywali child
+  
+  var add= document.querySelector(".add");
+  if (add.innerHTML.trim() === "ADD") {
+  add.innerHTML = "ADDED &#x2705;";
+} else {
+    add.innerHTML = "ADD";
+}
+}
+
+
+
+ function item1() {
+window.location.href="../shop/shop.html";
+ }
+ function item2() {
+window.location.href="../shop/shop2.html";
+ }
+ function item3() {
+window.location.href="../shop/shop3.html";
+ }
+
+ 
+ 
+    function contact(){
+        window.location.href ="../email/email.html"
+    }
+
+ function search() {
+    window.location.href ="../search/search.html"
+ }
+
+   function cart() {
+    window.location.href = "../cart/cart.html"
+   }
+
+   //hadi when u click categories tru7 scroll lel targeted ccategory
+   document.getElementById("scroll-button").addEventListener("click", function() {
+  document.getElementById("target-div").scrollIntoView({ behavior: 'smooth' });
+});
+
+
+
+
+    </script>
+</body>
+</html>
+

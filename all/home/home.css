@@ -1,0 +1,718 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.promotion {
+    width: 100%;
+    height: 30px;
+    background-color: rosybrown;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+   
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    transition: 0.5s;
+}
+
+.header {
+    
+    width: 100%;
+    
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    color: rosybrown;
+   
+}
+.icons {
+    background-color: transparent;
+    display: flex;
+    top: 55px;
+    right: 3%;
+    align-items: center;
+    position: absolute;
+}
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin-left: 15px;
+        cursor: pointer;
+
+    }
+    .contact div {
+     
+        height:3px;
+        width: 28px;
+        background-color: rosybrown;
+    }
+   
+
+
+.searchdiv {
+    height: 45px;
+    width: 45px;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.search {
+    height: 20px;
+   
+}
+
+.user {
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cart {
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+
+  
+
+/*choices and catefories design */
+
+.choices {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+
+   /*hadi tradhum resisable */
+    flex-flow: wrap;
+   
+    
+}
+
+.all {
+    background-color: rosybrown;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100px;
+   cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+
+.others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 100px;
+    margin-left: 20px;
+    border: 1px solid rosybrown;
+   font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: rosybrown;
+}
+
+       .others:hover {
+       
+        background-color: rosybrown;
+        color: white;
+        transition: all 0.3s ease;
+       }
+
+
+       /*this design for the items kho */
+
+       .items-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+      
+       justify-content: center;
+
+        flex-flow: wrap;
+        
+       }
+
+       .item {
+        
+        height: auto;
+        margin: 10px;
+        width: 20%;
+        box-sizing: border-box;
+        overflow:hidden;
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        transition: 1s ease-in-out;
+
+     
+     
+      }
+
+
+      
+     .item p {  position: relative;
+        z-index: 100;
+    margin: 4px;}
+       
+     
+      
+      .item img {
+        display: block;
+       
+        margin-bottom: 15px;
+        border-radius: 4px;
+        max-width: 100%;
+        height: auto;
+
+        object-fit: cover;
+  transition:  0.5s;
+      }
+      
+
+      .item-img:hover {
+        transform: scale(1.08);
+      }
+
+
+      .after-hover {
+        display: flex;
+        width: 90%;
+        align-self: center;
+        position: relative;
+        bottom: 17%;
+       opacity: 0;
+       transition: 0.3s;
+       
+      }
+
+       .item:hover  .after-hover {
+     
+         opacity: 1;
+         transition: 1s ;
+     
+       }
+
+      .after-hover div {
+        width: 50%;
+        height: 25px;
+        display: flex;
+        align-items: center;
+       
+        justify-content: center;
+
+        
+      }
+
+      .after-hover :first-child {
+        border: 1px solid white;
+        background-color: white;
+
+      }
+
+      .after-hover :last-child {
+        background-color: rosybrown;
+        color: white;
+        border: 1PX SOLID rosybrown;
+        transition: 1s ease-in-out;
+      }
+
+      .after-hover:hover {
+        width: 100%;  
+      }
+  
+
+
+   /* simple shirts design */
+
+
+   .shirts-container {
+    padding: 0 50px;
+    
+   }
+   .shirts-img img{
+    padding: 5px;
+   }
+
+   .text1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    margin-top: 10px;
+   }
+   .text2 {
+    color: #808080 ;
+    font-size: 13px;
+    
+   }
+
+    .shirt1 {
+        height: 540px;
+        object-fit: contain;
+        cursor: pointer;
+        object-fit: cover;
+        transition: transform 0.5s;
+        border-radius: 5px;
+        
+    }
+
+    .shirt1:hover {
+        transform: scale(0.95);
+    }
+     
+    .shirt2 {
+        height: 580px;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        cursor: pointer;
+        transition: transform 0.5s;
+        border-radius: 5px;
+        
+    }
+
+    .shirt2:hover {
+        transform: scale(0.95);
+    }
+    
+    .shirts-img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+
+        .line-container {
+            margin-top: 20px;
+            width:100%;
+            display: flex;
+            justify-content: center;
+           
+        }
+        .line {
+            background-color: grey;
+            margin-top: 30px;
+            height: 1px;
+            width: 70%;
+            margin-bottom: 50px;
+          border-radius: 100px;
+        }
+
+        .middle-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+
+        .middle-img img {
+            height: 660px;
+            max-width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+           
+            
+        }
+
+        .middle-img{
+            transition: transform 0.6s;
+        }
+        .middle-img img:hover {
+                background-image: url('');
+
+
+        }
+        .middle-img:hover {
+            transform: scale(0.95);
+
+        }
+
+        .middle-img{
+            display: flex;
+            flex-direction: column;
+           
+        }
+
+        .middle-text {
+            margin-top: 4px;
+            font-size: 12px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+
+
+
+
+
+        /* for small screen design */
+              @media screen and ( max-width:1200px ){
+        .item{
+           width: 40%;
+           transition: 1s ease-in-out;
+        }
+        .item img {
+            width: fit-content;
+            height: fit-content;
+            
+        }
+
+        .shirt1 {
+            height: 340px;
+            
+
+        }
+        
+        .shirt2 {
+            height: 380px;
+            
+        }
+
+        .shirts-container {
+
+            padding-left:50px;
+            padding-right: 50px;
+          
+           }
+        .shirts-img {
+        display: flex;
+        justify-content: space-between;
+     
+        align-items: center;
+        
+       
+    }
+    .after-hover {
+       
+        bottom: 15%;
+    
+       
+      }
+
+      .items-container p {
+        margin-top: 20px;
+      }
+    
+
+
+      @media screen and ( max-width:600px ){
+        .header {
+            margin-top: 10px;
+            margin-right: auto;
+            margin-left: 10px;
+            display: flex;
+            justify-content: left;
+            transition: 1s ease-in-out;
+           
+        }
+        
+      .choices .others:last-child {
+       margin-top: 10px;
+      }
+      .others {
+        transition: 1s;
+      }
+        .item{
+           width: 90%;
+        }
+        .item img {
+            width: fit-content;
+            height: fit-content;
+        }
+    }
+      }
+
+      @media screen and ( max-width:550px ){ 
+            .choices .others:nth-child(5) {
+                margin-top: 10px;
+            }
+      }
+      /* .shirt1 {
+        height: 140px;
+        
+    
+    }
+    
+    .shirt2 {
+        height: 160px;
+        
+    }
+    
+    .shirts-container {
+    
+        padding-left:20px;
+        padding-right: 10px;
+      
+       }
+    .shirts-img {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 5px;
+    }
+       */
+      /*phone size */
+
+      @media screen and ( max-width:415px ) {
+
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        }
+        
+        
+        .item {
+            
+            width: 100%;
+          
+            box-sizing: border-box;
+            overflow:hidden;
+            cursor: pointer;
+    
+           
+           
+     
+            text-align: left;
+            transition: 1s ease-in-out;
+         
+          }
+        .item img {
+           width: 100%;
+           
+            
+        }
+        .items-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .after-hover {
+         
+            bottom: 17%;
+         
+           
+          }
+
+          .items-container p {
+            margin-top: 7px;
+          }
+        /*choices and catefories design */
+
+.choices {
+    width: 100%;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+   
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+
+   /*hadi tradhum resisable */
+    flex-flow: wrap;
+    transition: 1s ease-in-out;
+    
+}
+
+    .choices .others:last-child {
+        margin-top: 0;
+    }
+    .choices .others:nth-child(5) {
+        margin-top:0;
+    }
+
+.all {
+    background-color: rosybrown;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   cursor: pointer;
+    color: white;
+  
+    font-size: 13px;
+}
+
+
+
+.others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+    padding-bottom:10px;
+    border-radius: 20px;
+    margin-left: 5px;
+    border: 1px solid rosybrown;
+   font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+    color: rosybrown;
+}
+
+
+/*0008*/
+
+.promotion {
+    width: 100%;
+    height: 30px;
+    background-color: rosybrown;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+   
+}
+
+
+.header {
+    width: 80%;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 10px;
+    display: flex;
+    justify-content: left;
+    transition: 1s ease-in-out;
+   
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    color: rosybrown;
+    
+    
+  
+   
+}
+.icons {
+    background-color: transparent;
+    display: flex;
+    
+    
+    align-items: center;
+   
+}
+
+.searchdiv {
+    height: 39px;
+    width: 39px;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.search {
+    height: 19px;
+    transition: 1s ease-in-out;
+   
+}
+
+.user {
+    height: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.cart {
+    height: 28px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+
+}
+
+.shirt1 {
+    height: 140px;
+    
+
+}
+
+.shirt2 {
+    height: 160px;
+    
+}
+
+.shirts-container {
+
+    padding-left:20px;
+    padding-right: 10px;
+  
+   }
+.shirts-img {
+display: flex;
+justify-content: center;
+align-items: center; 
+padding: 0 5px;
+}
+
+
+
+.middle-img img {
+height: auto;
+
+border-radius: 5px;
+cursor: pointer;
+
+
+}
+
+
+      }

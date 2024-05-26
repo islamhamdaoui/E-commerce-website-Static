@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../models/favicon.png" type="image/png">
+</head>
+<body>
+    
+<div class="mainscreen"> 
+      <div class="card">
+        <div class="leftside">
+          <img
+            src="../models/paymodel.jpg"
+            class="product"
+            alt="Model"
+          />
+        </div>
+        <div class="rightside">
+          <form action="">
+            <h1>CheckOut</h1>
+            <h2>Payment Information</h2>
+            <p>Cardholder Name</p>
+            <input type="text" class="inputbox" name="name" required />
+            <p>Card Number</p>
+            <input type="text" class="inputbox" name="card_number" id="card_number" maxlength="19" required oninput="CardNumber(this)"/>
+
+            <p>Card Type</p>
+            <select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">--Select a Card Type--</option>
+              <option value="Visa">Visa</option>
+              <option value="MasterCard">MasterCard</option>
+            </select>
+<div class="expcvv">
+
+            <p class="expcvv_text">Expiry</p>
+            <input type="month" class="inputbox" name="exp_date" id="exp_date" min="2024-04" value="2024-04" required />
+
+            <p class="expcvv_text2">CVV</p>
+            <input type="password" class="inputbox" name="cvv" id="cvv" required />
+        </div>
+            <p></p>
+            <button type="submit" class="button">CheckOut</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      function CardNumber(input) {
+  var cardNumber = input.value.replace(/\D/g, '');
+
+  var formattedCardNumber = cardNumber.replace(/(\d{4})(?=\d)/g, '$1 ');
+
+  input.value = formattedCardNumber;
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+.promotion {
+    height: 30px;
+    width: 100%;
+    background-color: rosybrown;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+   
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+ .header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    color: black;
+   
+}
+.icons {
+    background-color: transparent;
+    display: flex;
+    top: 55px;
+    right: 3%;
+    align-items: center;
+    position: absolute;
+}
+
+.searchdiv {
+    height: 45px;
+    width: 45px;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.search {
+    height: 20px;
+    cursor: pointer;
+}
+
+.user {
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cart {
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+/*haduu for the containers */
+.container {
+    display: flex;
+  margin-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+  } 
+  
+  .img-container {
+    height: fit-content;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    box-sizing: border-box; 
+  } 
+  
+
+.img-container img{
+    width: fit-content;
+    height: 610px;
+    
+}
+  
+
+
+.more-img {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.more-img img {
+    height: 148px;
+ 
+
+}
+
+#main-image {
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 2px;
+    margin-left: 10px;
+  }
+  
+  #main-image.fade-out {
+    opacity: 0;
+  }
+.other {
+    cursor: pointer;
+    border-radius:2px;
+    border: 1px solid rgb(204, 204, 204);
+}  
+
+.line {
+    height: auto;
+    width: 2px;
+    margin-left: 10px;
+    background-color :rgb(204, 204, 204);
+   
+  
+}
+
+.black-line {
+    transition: margin-top 0.5s ease-in-out;
+    
+    height: 150px;
+   
+    background-color: black;
+  }
+  
+
+
+  /* THIS IS FOR THE INFO SIDE LI FIH BUY NOW KHO */
+
+  
+  .info-container {
+    height: fit-content;
+    width: 50%;
+    padding-left: 4%;
+   
+  }
+  .item-name {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  /* .rating-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+    
+    
+  }
+
+  .star {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../photos/filled-star.png);
+    background-size: contain;
+    cursor: pointer;
+  }
+  
+  .rating-container span:nth-last-child(2) {
+    background-image: url(../photos/empty-star.png);
+  }
+  .rating-container span:last-child {
+    color: rgb(250, 207, 25);
+    font-size: 13px;
+    margin-left: 7px;
+    cursor: pointer;
+  }
+  .rating-container span:last-child:hover {
+    text-decoration: underline;
+  } */
+  .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 330px;
+    --stroke: #666;
+    --fill: #ffc73a;
+    float: left;
+  }
+  .rating input {
+    appearance: unset;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+  
+  .rating svg {
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+  }
+  
+  @keyframes idle {
+    from {
+      stroke-dashoffset: 24;
+    }
+  }
+  
+  .rating label:hover svg {
+    stroke: var(--fill);
+  }
+  
+  .rating input:checked ~ label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+  
+  @keyframes yippee {
+    0% {
+      transform: scale(1);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30% {
+      transform: scale(0);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30.1% {
+      stroke: var(--fill);
+      stroke-dasharray: 0;
+      stroke-linejoin: miter;
+      stroke-width: 8px;
+    }
+  
+    60% {
+      transform: scale(1.2);
+      fill: var(--fill);
+    }
+  }
+  /* end rating */
+  .price {
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 27px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+
+     /* colors container */
+
+  .color-container {
+    margin-top: 40px;
+    font-size: 22px;
+   
+  }
+  .color-container span {
+    color: rgb(90, 89, 89);
+
+  }
+  .color-container b {
+    color: black;
+  }
+
+   hr {
+    border-style: dashed;
+    opacity: 10%;
+    margin-top: 40px;
+    width: 20%;
+  
+  
+   }
+
+
+   .colors {
+    display: flex;
+   padding-top: 15px;
+   align-items: center;
+}
+   .grey {
+    border-radius: 100px;
+   margin-right: 10px;
+    /* border: 2px solid black; */
+    background-color: #E2E2E2;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+   }
+   .black {
+    border-radius: 100px;
+   
+    
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+   }
+
+   .black:hover, .grey:hover {
+    border: 1px solid black;
+   }
+
+  
+   /* size container */
+
+
+    .size-container {
+        margin-top: 27px;
+        margin-bottom: 27px;
+    }
+   .sizes {
+    display: flex;
+   padding-top: 15px;
+   align-items: center;
+  
+}
+   .size {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+    .size-box {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40PX;
+        height: 30px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 50px;
+        cursor: pointer;
+        border: 1px solid #c6c6c8;
+        transition: 0.5s ease-out;
+        
+    }
+    .size-box:hover {
+        border-color: black;
+    }
+
+    /* buttons design */
+    .buttons-container {
+        margin-top: 30px;
+        display: flex;
+       align-items: center;
+    }
+
+
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rosybrown;
+        width:75%;
+        color: white;
+        height: 55px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.5s ease-out;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .button:hover {
+        opacity: 80%;
+    }
+ 
+
+    .favorit {
+        cursor: pointer;
+        margin-left: 15px;
+        height: 54px;
+        width: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #c6c6c8;
+        border-radius: 10px;
+    }
+
+
+    .favorit:active {
+        background-image: url(../photos/filled-heart.png);
+    }
+    .favorit img {
+        height: 25px;
+    }
+
+
+
+
+    /*hadi ta quantity number css */
+    input[type="number"] {
+      width: 60px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      appearance: number-input; /* Add this line */
+    }
+    
+    input[type="number"]:focus {
+      outline: none;
+      border-color: rosybrown;
+      box-shadow: 0 0 5px rosybrown;
+    }
+    
+  .label {
+    margin-top: 27px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+
+
+
+
+
+
+
+/* for small screen design */
+@media screen and ( max-width:1500px ){
+
+    #main-image {
+     margin-left: 10px;
+     width:auto;
+   
+      }
+
+      .img-container{
+        width: 55%;
+      
+   }
+    
+      
+    }
+    
+
+
+
+
+
+@media screen and (max-width:1360px){
+   
+    .img-container{
+        width: 80%;
+    }
+
+
+   
+}
+@media screen and (max-width:940px){
+   
+
+    .container {
+        display: block;
+    }
+    .img-container{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .info-container{
+        width:100% ;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+   
+
+    .container {
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .img-container{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .info-container{
+        width:100% ;
+        padding-left: 0;
+    }
+
+   
+    
+}
+
+@media screen and (max-width:700px){
+   
+
+
+    .header {
+        padding-left: 5%;
+        justify-content: space-between;
+
+    }
+    .header h1 {
+       
+       left: 2%;
+       right: 10%;
+    }
+    
+}
+
+@media screen and (max-width:415px){
+   
+
+
+    .img-container {
+        height: fit-content;
+        width: 50%;
+        background-color: white;
+        display: flex;
+        box-sizing: border-box; 
+        margin-bottom: 15px;
+      
+      } 
+      
+    
+    .img-container img{
+       width: auto;
+       
+        
+    }
+      
+    
+    
+    .more-img {
+        display: flex;
+       flex-direction: column;
+        justify-content: space-around;
+
+        align-items: center;
+    
+    }
+    .more-img img {
+        height: 110px;
+     
+    
+    }
+    
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 3%;
+      } 
+
+      .line {
+        height: 450px;
+       visibility: hidden;
+        width: 2px;
+        z-index: 20;
+        position: absolute;
+        background-color :rgb(204, 204, 204);
+       
+      
+    }
+
+    .black-line {
+        transition: 0.5s ease-in-out;
+        
+        height: 111px;
+       
+        background-color: black;
+      }
+      
+      hr {
+        border-style: dashed;
+        opacity: 10%;
+        margin-top: 15px;
+        width: 20%;
+      
+      
+       }
+
+       .color-container {
+        margin-top: 15px;
+       
+       
+      }
+      
+#main-image {
+    transition:  0.5s ease-in-out;
+    border-radius: 2px;
+    height: 450px;
+    width: 152%;
+  }
+}
+

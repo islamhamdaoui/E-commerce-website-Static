@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLANA-Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../models/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="promotion">BUY NOW AND GET 50% PROMOTION</div>
+    <div class="header">
+        <h1 id="h1" onclick="visit()">POLANA</h1>
+        
+
+        <!--div icons-->
+        <div class="icons">
+            <div class="searchdiv" onclick="search()"><img class="search" src="../photos/searchwhite.png" alt=""></div>
+            <img src="../photos/shopping-bag.png" class="cart" onclick="cart()" alt="">
+            
+            <img class="user" src="../photos/user.png" alt="">
+       
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="img-container">
+          <div class="more-img">
+            
+            <img src="../models/model1-1.jpg" alt="" onclick="img1()" id="img1" class="other">
+            <img src="../models/model1-2.jpg" alt=""  onclick="img2()" id="img2" class="other">
+            <img src="../models/model1-3.jpg" alt=""  onclick="img3()" id="img3" class="other">
+            <img src="../models/model1-4.jpg" alt="" onclick="img4()" id="img4" class="other">
+          </div>
+          
+          <img src="../models/model1-1.jpg" alt="Main Image" id="main-image">
+          <div class="line" id="line"><div class="black-line" id="black-line"></div></div>
+        </div>
+        
+        <div class="info-container">
+          <h1 class="item-name">OVERSIZED WHITE COTON SHIRT</h1>
+          <!-- <div class="rating-container">
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span>(100+ Reviews)</span>
+          </div> -->
+          <div class="rating">
+            <input value="star-1" name="star-radio" id="star-1" type="radio">
+            <label for="star-1">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+            </label>
+            <input value="star-1" name="star-radio" id="star-2" type="radio">
+            <label for="star-2">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+            </label>
+            <input value="star-1" name="star-radio" id="star-3" type="radio">
+            <label for="star-3">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+            </label>
+            <input value="star-1" name="star-radio" id="star-4" type="radio">
+            <label for="star-4">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+            </label>
+            <input value="star-1" name="star-radio" id="star-5" type="radio">
+            <label for="star-5">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+            </label>
+          </div>
+          <span class="price">6,900.00DZD</span>
+          <hr>
+          <!--colors container-->
+          <div class="color-container">
+
+            <span class="color"><b>Color:</b> White</span>
+            <div class="colors">
+              <div class="grey"></div>
+              <div class="black"></div>
+            </div>
+          </div>
+          <!--size container-->
+          <div class="size-container">
+
+            <span class="size">Size</span>
+            <div class="sizes">
+              <div class="size-box" >S</div>
+              <div class="size-box" >M</div>
+              <div class="size-box" >L</div>
+              <div class="size-box" >XL</div>
+              <div class="size-box" >XXL</div>
+              
+            </div>
+          </div>
+
+
+
+          <label for="quantity" class="label">Quantity:</label> <br><br>
+<input type="number" id="quantity" name="quantity" min="1" max="100" step="1" >
+
+          <!--hada buttons container-->
+          <div class="buttons-container">
+            <div class="button" onclick="buy()">BUY NOW</div>
+            <DIV class="favorit" onclick="image()"><img id="img" src="../photos/heart.png" alt=""></DIV>
+
+          </div>
+        
+          
+        </div>
+      </div>
+      
+      <footer class="footer">
+        <div class="content">
+            <div class="footerdivcont">
+                <div class="footercont">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>get help </h4>
+                    <ul>
+                        <li><a href="../email/email.html">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Sweats</a></li>
+                    </ul>
+                </div>
+                <div class="footercont">
+                    <h4>follow us</h4>
+                    <div class="socialmedia">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <h4>Newsletter Subscription</h4>
+                    <form action="">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="useremail" id="email" placeholder="Entre your email">
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="copyrith">
+                      <p class="copy">&copy; Polana. All rights reserved.</p>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+     </footer>
+
+
+      
+    <script>
+
+//and hada lcode ana ktabto :) 
+// to make the black line move when u choose a picture
+function search() {
+    window.location.href ="../search/search.html"
+ }
+
+
+ function buy() {
+  window.location.href= "../payment/payment.html"
+ }
+function visit() {
+            window.location.href="../../index.html"
+        }
+        function cart() {
+          window.location.href = "../cart/cart.html"
+        }
+
+
+
+function img1() {
+
+    document.getElementById("black-line").style.marginTop = '0px';
+    document.getElementById("img1").style.borderColor ='black';
+    document.getElementById("img2").style.borderColor ='rgb(204, 204, 204)';
+    document.getElementById("img3").style.borderColor ='rgb(204, 204, 204)';
+    document.getElementById("img4").style.borderColor ='rgb(204, 204, 204)';
+    
+   
+}
+function img2() {
+   
+    document.getElementById("black-line").style.marginTop = '152px';
+    document.getElementById("img2").style.borderColor ='#000000'
+    document.getElementById("img1").style.borderColor ='rgb(204, 204, 204)';
+    document.getElementById("img3").style.borderColor ='rgb(204, 204, 204)';
+    document.getElementById("img4").style.borderColor ='rgb(204, 204, 204)';
+
+}
+function img3() {
+    document.getElementById("black-line").style.marginTop = '306px';
+    document.getElementById("img3").style.borderColor ='#000000'
+    document.getElementById("img2").style.borderColor ='rgb(204, 204, 204)';
+    document.getElementById("img1").style.borderColor ='rgb(204, 204, 204)';
+    document.getElementById("img4").style.borderColor ='rgb(204, 204, 204)';
+
+}
+function img4() {
+    document.getElementById("black-line").style.marginTop = '460px';
+    document.getElementById("img4").style.borderColor ='#000000'
+    document.getElementById("img2").style.borderColor ='rgb(204, 204, 204)';
+    document.getElementById("img3").style.borderColor ='rgb(204, 204, 204)';
+    document.getElementById("img1").style.borderColor ='#rgb(204, 204, 204)';
+}
+
+
+
+//this is when image clicked ta3 lfavorite
+var filled = 0;
+    const heart = document.getElementById('img');
+      function image() {
+       if(heart.src.includes('photos/heart.png')) {
+
+        heart.src = "../photos/filled-heart.png"
+       } else {
+        heart.src = "../photos/heart.png"
+       }
+        
+        
+       }
+     
+     
+      
+
+        // READ ME 
+        // hada lcode jabto man google its not mine  
+        document.addEventListener('DOMContentLoaded', function() {
+  const thumbnails = document.querySelectorAll('.other');
+
+  thumbnails.forEach(function(thumbnail) {
+    thumbnail.addEventListener('click', function() {
+      const newSrc = thumbnail.getAttribute('src');
+
+      const mainImage = document.querySelector('#main-image');
+
+      mainImage.classList.add('fade-out');
+      setTimeout(function() {
+        mainImage.setAttribute('src', newSrc);
+        mainImage.classList.remove('fade-out');
+      }, 500);
+    });
+  });
+});
+
+
+
+
+function sizeChecked() {
+    var sizeBoxes = document.querySelectorAll('.size-box');
+    var selectedSize = null; // To keep track of the selected size
+
+    sizeBoxes.forEach(function(sizeBox) {
+      if (sizeBox.getAttribute('onclick')) {
+        // If the size box has an onclick function, execute it when clicked
+        sizeBox.addEventListener('click', function() {
+          eval(sizeBox.getAttribute('onclick')); // Execute the onclick function
+        });
+      } else {
+        // If the size box doesn't have an onclick function, toggle the background and font color
+        sizeBox.addEventListener('click', function() {
+          // Reset all size boxes to their default style
+          sizeBoxes.forEach(function(box) {
+            box.style.backgroundColor = '';
+            box.style.color = '';
+          });
+
+          // If the clicked size is the same as the selected size, reset the selection
+          if (this === selectedSize) {
+            selectedSize = null;
+          } else {
+            // Set the background color to gray and font color to white for the clicked size box
+            this.style.backgroundColor = 'rosybrown';
+            this.style.color = 'white';
+            selectedSize = this;
+          }
+        });
+      }
+    });
+  }
+
+  // Call the sizeChecked function to attach the click event handlers
+  sizeChecked();
+
+
+    const greyDiv = document.querySelector('.grey');
+    const blackDiv = document.querySelector('.black');
+    const colorSpan = document.querySelector('.color');
+
+    greyDiv.addEventListener('click', () => {
+        greyDiv.style.border = '2px solid rosybrown';
+        blackDiv.style.border = 'none';
+        colorSpan.innerHTML = '<b>Color:</b> White';
+    });
+
+    blackDiv.addEventListener('click', () => {
+        blackDiv.style.border = '2px solid rosybrown';
+        greyDiv.style.border = 'none';
+        colorSpan.innerHTML = '<b>Color:</b> Black';
+    });
+  </script>
+</body>
+</html>
