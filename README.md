@@ -4,6 +4,9 @@
     </a>
 </div>
 
+![20240526_102605](https://github.com/islamhamdaoui/E-commerce-website-Static/assets/91889739/af917631-5db7-4d5a-9592-a11afb3af447)
+
+
 # Polana Static E-commerce Website
 
 ## Overview
